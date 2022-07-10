@@ -36,19 +36,30 @@ body[data-environment="development"] img[alt=""], body[data-environment="develop
   @apply text-4xl mb-20 font-thin sm:text-5xl
 }
 
-.intro_text-body{
-  @apply my-10 text-lg font-light prose text-justify mx-auto
-}
-
 .tell-me-more-link{
   @apply text-xl font-light text-sky-700 hover:text-sky-500 underline sm:text-3xl
 }
 
+.intro-text-body{
+  @apply py-10
+}
+.intro-text-body p{
+  @apply w-4/5 mx-auto text-xl font-light leading-relaxed mb-4; 
+}
 
 .skills{
-  @apply bg-red-300 text-center
+
 }
 
-.skills-list{
-  @apply flex 
+.skill-items{
+  @apply  grid grid-cols-3 
 }
+
+.skill-item{
+  @apply mx-2 p-4 
+}
+
+.skill-item h4{
+  @apply font-semibold text-sky-800 text-xl
+}
+
