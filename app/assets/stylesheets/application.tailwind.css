@@ -47,8 +47,15 @@ body[data-environment="development"] img[alt=""], body[data-environment="develop
   @apply w-4/5 mx-auto text-xl font-light leading-relaxed mb-4; 
 }
 
-.skills{
+.skills-header{
+  @apply text-center mb-10
+}
+.skills-header h2{
+  @apply text-3xl font-semibold text-sky-800
+}
 
+.skills-header p{
+  @apply text-xl font-semibold text-sky-700
 }
 
 .skill-items{
@@ -56,7 +63,7 @@ body[data-environment="development"] img[alt=""], body[data-environment="develop
 }
 
 .skill-item{
-  @apply mx-2 p-4 
+  @apply m-2 p-4 bg-blue-100
 }
 
 .skill-item h4{
