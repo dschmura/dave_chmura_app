@@ -75,14 +75,12 @@ body[data-environment="development"] img[alt=""], body[data-environment="develop
   @apply flex-wrap flex self-center justify-center max-w-3xl mx-auto
 }
 
-
-
 .resume-header{
   @apply bg-yellow-600 p-5 h-44 text-white text-center bg-cover bg-scroll bg-center opacity-90;
 }
 
 .resume-contact{
-  @apply text-lg w-32 -rotate-90 ;
+  @apply text-sm w-32 -rotate-90 mt-10;
 }
 
 .resume-name{
@@ -132,18 +130,18 @@ li{
 }
 
 .resume-job{
-  @apply text-lg font-semibold text-slate-600
+  @apply text-sm font-semibold text-sky-700 sm:text-base md:text-lg 
 }
 .resume-employment-dates{
-  @apply italic mr-2 text-sm font-light
+  @apply italic  text-xs font-light hidden text-slate-800
 }
 
 .resume-employer{
-  @apply text-xl
+  @apply text-base sm:text-xl leading-tight mb-4 sm:mb-2 
 }
 
 .resume-job-location{
-  @apply text-sm font-medium mx-4
+  @apply text-xs font-medium mx-4 sm:text-base whitespace-pre
 }
 
 .resume-experience-section{
@@ -151,20 +149,20 @@ li{
 }
 
 .resume-experience-section h2{
-  @apply text-2xl bg-slate-200 text-sky-800
+  @apply text-2xl bg-slate-200 text-sky-800 mb-3
 }
 .resume-job-experiences{
-  @apply p-2 bg-slate-50 text-sm leading-snug my-2
+  @apply p-2 bg-slate-50 text-sm leading-snug my-2 
 }
 
 .resume-education-sidebar{
-  @apply bg-slate-200 text-sm rounded-lg p-3 leading-snug w-screen max-w-sm  sm:w-60 
+  @apply bg-slate-200 text-sm rounded-lg p-3 leading-snug w-screen max-w-lg  sm:w-60 
 }
 
 
 
 .resume-education-sidebar .institution{
-  @apply font-bold my-1;
+  @apply font-bold my-1 ;
 }
 
 
