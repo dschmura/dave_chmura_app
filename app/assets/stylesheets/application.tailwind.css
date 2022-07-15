@@ -19,54 +19,54 @@ body[data-environment="development"] img[alt=""], body[data-environment="develop
 
 
 .landing-page-header {
-  background-image: url("<%= image_url 'DavePics/hug_70.svg' %>");
-  @apply p-5 text-sky-900 bg-sky-100 text-center ;
+  /* background-image: url("<%= image_url 'DavePics/hug_70.svg' %>"); */
+  @apply p-5 text-white bg-sky-900 text-center bg-cover bg-scroll h-96 bg-center sm:h-96 opacity-90;
 }
-
 
 .intro-text{
   @apply  m-3 p-5 
 }
 
 .intro-lead-in{
-  @apply text-2xl mb-4 italic sm:text-3xl
+  @apply text-2xl mb-4 italic sm:text-3xl font-semibold
 }
 
 .intro-heading{
-  @apply text-4xl mb-20 font-thin sm:text-5xl
+  @apply text-4xl mb-20 mt-8 font-light sm:text-5xl
 }
 
 .tell-me-more-link{
-  @apply text-xl font-light text-sky-700 hover:text-sky-500 underline sm:text-3xl
+  @apply text-xl font-light text-sky-100 hover:text-sky-500 underline sm:text-3xl
 }
 
 .intro-text-body{
-  @apply py-10
-}
-.intro-text-body p{
-  @apply w-4/5 mx-auto text-xl font-light leading-relaxed mb-4; 
+  @apply p-10 font-light leading-relaxed indent-4 sm:text-lg
 }
 
 .skills-header{
-  @apply text-center mb-10
+  @apply text-center mb-10 
 }
 .skills-header h2{
-  @apply text-3xl font-semibold text-sky-800
+  @apply text-3xl font-semibold text-sky-800 
 }
 
 .skills-header p{
-  @apply text-xl font-semibold text-sky-700
+  @apply text-xl font-semibold text-sky-700  align-middle
 }
 
-.skill-items{
-  @apply  grid grid-cols-3 
-}
 
 .skill-item{
-  @apply m-2 p-4 bg-blue-100
+  @apply m-2 p-4 bg-blue-100 
 }
 
-.skill-item h4{
-  @apply font-semibold text-sky-800 text-xl
+.skill-item-header{
+  @apply inline-block align-middle w-full flex py-4 justify-center
 }
 
+.skill-item-header h4{
+  @apply font-semibold text-sky-700  pl-2 text-lg
+}
+
+.skill-item-header svg{
+  @apply text-sky-700 h-6 align-middle 
+}
