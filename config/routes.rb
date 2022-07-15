@@ -7,6 +7,8 @@ Rails.application.routes.draw do
     get :privacy
   end
 
+  match '/resume', :to => 'resume#index', via: :get
+
   # root to: 'pages#index'
   # get '/about', to: 'pages#about'
   # get '/contact', to: 'pages#contact'

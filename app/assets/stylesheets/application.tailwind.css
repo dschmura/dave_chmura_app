@@ -56,17 +56,129 @@ body[data-environment="development"] img[alt=""], body[data-environment="develop
 
 
 .skill-item{
-  @apply m-2 p-4 bg-blue-100 
+  @apply m-2 p-4 bg-blue-100 md:w-56 md:font-light md:text-sm md:px-3 md:m-1
 }
 
 .skill-item-header{
-  @apply inline-block align-middle w-full flex py-4 justify-center
+  @apply inline-block align-middle w-full flex py-4 justify-center md:py-2
 }
 
 .skill-item-header h4{
-  @apply font-semibold text-sky-700  pl-2 text-lg
+  @apply font-semibold text-sky-700 pl-2 text-lg md:text-base
 }
 
 .skill-item-header svg{
-  @apply text-sky-700 h-6 align-middle 
+  @apply text-sky-700 h-6 align-middle md:h-5
+}
+
+.skill-items{
+  @apply flex-wrap flex self-center justify-center max-w-3xl mx-auto
+}
+
+
+
+.resume-header{
+  @apply bg-yellow-600 p-5 h-44 text-white text-center bg-cover bg-scroll bg-center opacity-90;
+}
+
+.resume-contact{
+  @apply text-lg w-32 -rotate-90 ;
+}
+
+.resume-name{
+  @apply text-white text-xl font-light 
+}
+
+.resume-phone h3{
+  @apply text-green-600
+}
+
+.resume-email{
+  @apply font-semibold text-sm;
+}
+
+.resume{
+  @apply list-disc flex;
+}
+
+li{
+  @apply list-disc list-inside
+}
+
+.resume-sidebar{
+  @apply w-1/2 p-4
+  
+}
+
+.resume-button{
+
+}
+
+.resume-experience-sidebar{
+  
+}
+.resume-a-bit-about-me-sidebar{
+  @apply text-sm font-extralight px-4 pb-4 leading-snug
+  
+}
+
+.resume-a-bit-about-me-sidebar h3{
+  @apply text-lg font-medium italic
+  
+}
+
+.field-circle{
+  @apply float-right 
+}
+
+.resume-experience-section{
+}
+
+.resume-job{
+  @apply text-lg font-semibold text-slate-600
+}
+.resume-employment-dates{
+  @apply italic mr-2 text-sm font-light
+}
+
+.resume-employer{
+  @apply text-xl
+}
+
+.resume-job-location{
+  @apply text-sm font-medium mx-4
+}
+
+.resume-experience-section{
+  @apply p-4 
+}
+
+.resume-experience-section h2{
+  @apply text-2xl bg-slate-200 text-sky-800
+}
+.resume-job-experiences{
+  @apply p-2 bg-sky-50 text-sm leading-snug my-2
+}
+
+.resume-education-sidebar{
+  @apply bg-slate-200 text-sm rounded-lg p-3 leading-snug
+}
+
+
+
+.resume-education-sidebar .institution{
+  @apply font-bold my-1;
+}
+
+
+.resume-education-sidebar .credential{
+  @apply font-light text-xs leading-tight;
+}
+
+.resume-education-sidebar .focus{
+  @apply text-xs italic font-light text-sky-900;
+}
+
+.resume-education-sidebar h3{
+  @apply font-medium text-xl text-sky-800;
 }
