@@ -98,7 +98,7 @@ body[data-environment="development"] img[alt=""], body[data-environment="develop
 }
 
 .resume{
-  @apply list-disc flex;
+  @apply list-disc flex flex-col sm:flex-row;
 }
 
 li{
@@ -118,7 +118,7 @@ li{
   
 }
 .resume-a-bit-about-me-sidebar{
-  @apply text-sm font-extralight px-4 pb-4 leading-snug
+  @apply text-sm font-extralight px-4 pb-4 leading-snug w-screen sm:w-60
   
 }
 
@@ -129,9 +129,6 @@ li{
 
 .field-circle{
   @apply float-right 
-}
-
-.resume-experience-section{
 }
 
 .resume-job{
@@ -157,11 +154,11 @@ li{
   @apply text-2xl bg-slate-200 text-sky-800
 }
 .resume-job-experiences{
-  @apply p-2 bg-sky-50 text-sm leading-snug my-2
+  @apply p-2 bg-slate-50 text-sm leading-snug my-2
 }
 
 .resume-education-sidebar{
-  @apply bg-slate-200 text-sm rounded-lg p-3 leading-snug
+  @apply bg-slate-200 text-sm rounded-lg p-3 leading-snug w-screen max-w-sm  sm:w-60 
 }
 
 
